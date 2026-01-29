@@ -1,6 +1,20 @@
 # Code for SyMFood: Synergistic Multi-Modal Prompting for Fine-Grained Zero-Shot Food Detection
-### Environment requirements
-#### - The code implementation of our experiments mainly based on [PyTorch 1.1.0](https://pytorch.org/) and Python 3.8.
-The following scripts are for different steps in the pipeline on MS COCO 2017 dataset, please see the respective files for more arguments. Before running the scripts, please set the datasets and backbone paths in the config files. Weights of [ResNet50](https://dl.fbaipublicfiles.com/detectron2/ImageNetPretrained/MSRA/R-50.pkl) trained excluding overlapping unseen classes from ImageNet.
+## Overview
+This repository contains the code and materials for our TCSVT paper on fine-grained zero-shot food detection. We propose SyMFood (Synergistic Multi-Modal Prompting) to improve detection of unseen food categories by leveraging multi-modal prompts.
 
+## Environment
+We provide a reproducible environment file based on our training setup.
 
+- Python 3.8
+- PyTorch 1.12.1 + CUDA 11.3
+- MMDetection (2.x) + MMCV (2.x)
+- Detectron2 / Detrex (for feature extraction components)
+
+### Create the environment
+```
+conda env create -f environment.yml
+conda activate symfood
+```
+## Notes
+- If you are using Docker, ensure CUDA 11.3 (or compatible) is available in the container.
+- Update dataset and pretrained backbone paths in the config files before running any scripts.
