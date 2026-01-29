@@ -20,8 +20,8 @@ dependencies:
       - cloudpickle==3.1.1
       - contourpy==1.1.1
       - cycler==0.12.1
-      - -e /22wangxinlong/MM23/detrex/detectron2
-      - -e /22wangxinlong/MM23/detrex
+      - detectron2==0.6
+      - detrex==0.3.0
       - docker-pycreds==0.4.0
       - einops==0.8.1
       - eval_type_backport==0.2.2
@@ -111,3 +111,4 @@ dependencies:
       - yacs==0.1.8
       - yapf==0.43.0
       - zipp==3.20.2
+
